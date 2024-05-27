@@ -7,6 +7,7 @@ import "./Home.scss";
 import Loader from "react-loaders";
 //Components
 import AnimatedLetters from "../Animated/AnimatedLetters";
+import LogoKC from "../LogoKC/LogoKC";
 
 export default function Home() {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -61,7 +62,9 @@ export default function Home() {
               CONTACT ME
             </Link>
           </div>
-          <div className="logo-container"></div>
+        </div>
+        <div className="logo-container">
+          <LogoKC />
         </div>
       </div>
       <Loader type="pacman" />

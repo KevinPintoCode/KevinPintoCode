@@ -1,5 +1,5 @@
-import './LogoKC.scss';
-import LogoS from '../../assets/images/logo.png';
+import "./LogoKC.scss";
+import LogoS from "../../assets/images/pxArt.png";
 
 export default function LogoKC() {
   return (
