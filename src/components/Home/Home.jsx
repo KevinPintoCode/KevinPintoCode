@@ -62,9 +62,9 @@ export default function Home() {
               CONTACT ME
             </Link>
           </div>
-        </div>
-        <div className="logo-container">
-          <LogoKC />
+          <div className="logo-container">
+            <LogoKC />
+          </div>
         </div>
       </div>
       <Loader type="pacman" />

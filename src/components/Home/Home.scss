@@ -20,13 +20,12 @@
 
 .home-page {
   .logo-container {
+    animation: fadeInRight 6s;
     position: relative;
     width: 100px;
     height: auto;
-    top: 50px;
+    top: -113px;
     right: 0;
-    box-sizing: border-box;
-    margin: auto;
     left: 0;
   }
   .purple {
@@ -130,10 +129,10 @@
       margin: 0 auto;
     }
     .logo-container {
-      width: 400px;
-      height: 400px;
-      box-sizing: border-box;
-      object-fit: contain;
+      position: initial;
+      width: 100%;
+      top: 0;
+      height: 0%;
     }
     .flat_button {
       float: none;
