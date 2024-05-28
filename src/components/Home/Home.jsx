@@ -13,7 +13,7 @@ export default function Home() {
   const [letterClass, setLetterClass] = useState("text-animate");
   const greetArray = "Welcome  Adventurer...".split("");
   const greetArray1 = "Welcome ".split("");
-  const greetArray2 = "Adventurer...".split("");
+  const greetArray2 = "Adventurer!".split("");
   const nameArray = "evin Pinto...".split("");
   const jobArray = "".split("");
   useEffect(() => {
