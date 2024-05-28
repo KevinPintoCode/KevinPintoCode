@@ -31,21 +31,28 @@ export default function Home() {
                 <div className="test">
                   <AnimatedLetters
                     letterClass={letterClass}
-                    strArray={greetArray}
+                    strArray={greetArray1}
+                    idx={15}
+                  />
+                </div>
+                <div className="test">
+                  <AnimatedLetters
+                    letterClass={letterClass}
+                    strArray={greetArray2}
                     idx={15}
                   />
                 </div>
               </h1>
             </div>
             <h2>
-              <span className={`${letterClass} _11`}>I</span>
-              <span className={`${letterClass} _13`}>'</span>
-              <span className={`${letterClass} _14`}>m</span>
+              <span className={`${letterClass} _15`}>I</span>
+              <span className={`${letterClass} _16`}>'</span>
+              <span className={`${letterClass} _17`}>m</span>
               <img className="k-letter" src={k_letter} alt="developer" />
               <AnimatedLetters
                 letterClass={letterClass}
                 strArray={nameArray}
-                idx={15}
+                idx={19}
               />
               <br />
               <AnimatedLetters

@@ -1,7 +1,6 @@
 import Loader from "react-loaders";
 import "./Contact.scss";
 import AnimatedLetters from "../Animated/AnimatedLetters";
-import LogoKC from "../LogoKC/LogoKC";
 import { useEffect, useState, useRef } from "react";
 
 export default function Contact() {

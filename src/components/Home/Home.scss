@@ -6,14 +6,10 @@
 .welcome {
   display: flex;
   font-family: "Pixelify Sans", cursive;
-  animation: backInLeft 10s linear both;
-  animation-duration: 1s;
-  animation-delay: -0.7s;
   flex-direction: row;
 
   .test {
-    display: flex;
-    flex-wrap: nowrap;
+    white-space: nowrap;
   }
 
   h1 {
@@ -24,19 +20,6 @@
 }
 
 .home-page {
-  .logo-container {
-    animation: fadeInRight 6s;
-    position: relative;
-    width: 100px;
-    height: auto;
-    top: -113px;
-    right: 0;
-    left: 0;
-
-    img {
-      object-fit: cover;
-    }
-  }
   .purple {
     color: #a970ff;
   }
