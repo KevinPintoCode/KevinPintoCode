@@ -1,15 +1,15 @@
 //React
-import { useState } from 'react';
-import './App.scss';
-import { Routes, Route } from 'react-router-dom';
+import { useState } from "react";
+import "./App.scss";
+import { Routes, Route } from "react-router-dom";
 
 //Components
-import Layout from './components/Layout';
-import Home from './components/Home/Home';
-import About from './components/About/About';
-import Contact from './components/Contact/Contact';
-import Portfolio from './components/Portfolio/Portfolio';
-import Dashboard from './components/Dashboard/Dashboard';
+import Layout from "./components/Layout";
+import Home from "./components/Home/Home";
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Dashboard from "./components/Dashboard/Dashboard";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           <Route path="" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="portfolio" element={<Portfolio />} />
+          <Route path="projects" element={<Portfolio />} />
           <Route path="dashboard" element={<Dashboard />} />
         </Route>
       </Routes>

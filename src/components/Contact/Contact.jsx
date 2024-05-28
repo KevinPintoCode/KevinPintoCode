@@ -1,16 +1,16 @@
-import Loader from 'react-loaders';
-import './Contact.scss';
-import AnimatedLetters from '../Animated/AnimatedLetters';
-import LogoKC from '../LogoKC/LogoKC';
-import { useEffect, useState, useRef } from 'react';
+import Loader from "react-loaders";
+import "./Contact.scss";
+import AnimatedLetters from "../Animated/AnimatedLetters";
+import LogoKC from "../LogoKC/LogoKC";
+import { useEffect, useState, useRef } from "react";
 
 export default function Contact() {
-  const [letterClass, setLetterClass] = useState('text-animate');
+  const [letterClass, setLetterClass] = useState("text-animate");
   const form = useRef();
 
   useEffect(() => {
     setTimeout(() => {
-      return setLetterClass('text-animate-hover');
+      return setLetterClass("text-animate-hover");
     }, 4000);
   }, []);
 
@@ -19,23 +19,23 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-        'service_8j9cphd',
-        'contact_form',
+        "service_8j9cphd",
+        "contact_form",
         form.current,
-        'dDPJ2T9MK2J4yZkpw'
+        "dDPJ2T9MK2J4yZkpw"
       )
       .then(
         function (response) {
-          alert('Your message has been successfully sent!');
+          alert("Your message has been successfully sent!");
           window.location.reload(false);
         },
         function (error) {
-          alert('Failed to sent your message, please try again.');
+          alert("Failed to sent your message, please try again.");
         }
       );
   };
 
-  const strArray = 'Contact Me'.split('');
+  const strArray = "Contact Me".split("");
   return (
     <>
       <div className="container contact-page">
@@ -86,11 +86,6 @@ export default function Contact() {
                 </li>
               </ul>
             </form>
-          </div>
-        </div>
-        <div className="logo-container">
-          <div className="logo-img">
-            <LogoKC />
           </div>
         </div>
       </div>

@@ -81,7 +81,7 @@
         }
       }
       &:after {
-        content: '';
+        content: "";
         font-size: 9px;
         letter-spacing: 2px;
         position: absolute;
@@ -95,24 +95,24 @@
 
       &:first-child {
         &::after {
-          content: 'HOME';
+          content: "HOME";
         }
       }
     }
 
     a.about-link {
       &:after {
-        content: 'ABOUT';
+        content: "ABOUT";
       }
     }
     a.portfolio-link {
       &:after {
-        content: 'PORTFOLIO';
+        content: "PROJECTS";
       }
     }
     a.contact-link {
       &:after {
-        content: 'CONTACT';
+        content: "CONTACT";
       }
     }
 

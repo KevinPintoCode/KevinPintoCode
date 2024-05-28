@@ -1,16 +1,16 @@
-import { Link, NavLink } from 'react-router-dom';
-import { useState } from 'react';
-import './Sidebar.scss';
-import Logo from '../../assets/images/logo.png';
-import { TbHomeMove } from 'react-icons/tb';
-import { FaRegEnvelope } from 'react-icons/fa6';
-import { PiSword } from 'react-icons/pi';
+import { Link, NavLink } from "react-router-dom";
+import { useState } from "react";
+import "./Sidebar.scss";
+import Logo from "../../assets/images/logo.png";
+import { TbHomeMove } from "react-icons/tb";
+import { FaRegEnvelope } from "react-icons/fa6";
+import { PiSword } from "react-icons/pi";
 import {
   RiContactsLine,
   RiLinkedinBoxLine,
   RiGithubLine,
-} from 'react-icons/ri';
-import { Fade as Hamburger } from 'hamburger-react';
+} from "react-icons/ri";
+import { Fade as Hamburger } from "hamburger-react";
 
 export default function Sidebar() {
   const [isOpen, setOpen] = useState(false);
@@ -19,7 +19,7 @@ export default function Sidebar() {
       <Link className="logo" to="/">
         <img className="logo" src={Logo} alt="logo" />
       </Link>
-      <nav className={isOpen ? 'mobile-show' : ''}>
+      <nav className={isOpen ? "mobile-show" : ""}>
         <NavLink
           onClick={() => setOpen(!isOpen)}
           className="link home-link"
@@ -43,7 +43,7 @@ export default function Sidebar() {
           className="link portfolio-link"
           exact="true"
           activeclassname="active"
-          to="/portfolio"
+          to="/projects"
         >
           <PiSword />
         </NavLink>
