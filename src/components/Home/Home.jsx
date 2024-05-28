@@ -39,7 +39,7 @@ export default function Home() {
                   <AnimatedLetters
                     letterClass={letterClass}
                     strArray={greetArray2}
-                    idx={15}
+                    idx={22}
                   />
                 </div>
               </h1>
