@@ -2,6 +2,21 @@
 
 .home-page {
   animation-delay: 1.6s;
+
+  .logo-container {
+    animation: fadeInRight 4s;
+    z-index: 0;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+
+    img {
+      width: 720px;
+      height: 720px;
+      bottom: 0;
+    }
+  }
 }
 .welcome {
   display: flex;
