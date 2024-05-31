@@ -28,14 +28,14 @@ export default function Home() {
           <div className="text-zone">
             <div className="welcome">
               <h1>
-                <div className="test">
+                <div className="nowrap">
                   <AnimatedLetters
                     letterClass={letterClass}
                     strArray={greetArray1}
                     idx={15}
                   />
                 </div>
-                <div className="test">
+                <div className="nowrap">
                   <AnimatedLetters
                     letterClass={letterClass}
                     strArray={greetArray2}

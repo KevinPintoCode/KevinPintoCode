@@ -1,4 +1,13 @@
-.portfolio-page {
+.portfolio-page,
+.contact-page {
+  .page-title {
+    display: flex;
+    font-family: "Pixelify Sans", cursive;
+
+    span {
+      color: #ffffff;
+    }
+  }
   padding-left: 100px;
   padding-right: 50px;
   width: calc(100% - 150px);
@@ -6,7 +15,7 @@
   height: 100%;
   overflow: auto;
 
-  h1.page-title {
+  div.page-title {
     margin-left: 100px;
     margin-top: 100px;
   }
@@ -54,7 +63,7 @@
       font-size: 32px;
       font-weight: 500;
       line-height: 24px;
-      font-family: 'Pixelify Sans', cursive;
+      font-family: "Pixelify Sans", cursive;
     }
 
     .description {
@@ -87,7 +96,7 @@
     }
 
     &:after {
-      content: '';
+      content: "";
       background: linear-gradient(180deg, #a970ff, #0e0e10);
       position: absolute;
       left: 0;

@@ -1,33 +1,46 @@
-import './About.scss';
-import { useState, useEffect } from 'react';
-import Loader from 'react-loaders';
+import "./About.scss";
+import { useState, useEffect } from "react";
+import Loader from "react-loaders";
 //Icons
-import { DiPhotoshop, DiJavascript1, DiUnitySmall } from 'react-icons/di';
-import { RiCss3Fill } from 'react-icons/ri';
-import { SiReact, SiUnity, SiFigma } from 'react-icons/si';
-import { IconContext } from 'react-icons';
+import { DiPhotoshop, DiJavascript1, DiUnitySmall } from "react-icons/di";
+import { RiCss3Fill } from "react-icons/ri";
+import { SiReact, SiUnity, SiFigma } from "react-icons/si";
+import { IconContext } from "react-icons";
 
-import AnimatedLetters from '../Animated/AnimatedLetters';
+import AnimatedLetters from "../Animated/AnimatedLetters";
 
 export default function About() {
-  const aboutArr = 'About me'.split('');
-  const [letterClass, setLetterClass] = useState('text-animate');
+  const aboutArr = "About".split("");
+  const aboutArr2 = " me".split("");
+  const [letterClass, setLetterClass] = useState("text-animate");
   useEffect(() => {
     setTimeout(() => {
-      return setLetterClass('text-animate-hover');
+      return setLetterClass("text-animate-hover");
     }, 3000);
   }, []);
   return (
     <>
       <div className="container about-page">
         <div className="text-zone">
-          <h1>
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={aboutArr}
-              idx={15}
-            />
-          </h1>
+          <div className="welcome">
+            <h1>
+              <div className="nowrap">
+                <AnimatedLetters
+                  letterClass={letterClass}
+                  strArray={aboutArr}
+                  idx={15}
+                />
+              </div>
+              <div className="nowrap">
+                <AnimatedLetters
+                  letterClass={letterClass}
+                  strArray={aboutArr2}
+                  idx={20}
+                />
+              </div>
+            </h1>
+          </div>
+
           <p>
             Hello there, I'm Kevin Pinto, known as "Goss" in the gaming world.
             Hailing from Venezuela, I wear multiple hats as a front-end
@@ -53,42 +66,42 @@ export default function About() {
         <div className="stage-cube-cont">
           <div className="cube-spinner">
             <div className="face1">
-              <IconContext.Provider value={{ color: '#28a4d9' }}>
+              <IconContext.Provider value={{ color: "#28a4d9" }}>
                 <div>
                   <RiCss3Fill />
                 </div>
               </IconContext.Provider>
             </div>
             <div className="face2">
-              <IconContext.Provider value={{ color: '#1b1790' }}>
+              <IconContext.Provider value={{ color: "#1b1790" }}>
                 <div>
                   <DiPhotoshop />
                 </div>
               </IconContext.Provider>
             </div>
             <div className="face3">
-              <IconContext.Provider value={{ color: '#efd81d' }}>
+              <IconContext.Provider value={{ color: "#efd81d" }}>
                 <div>
                   <DiJavascript1 />
                 </div>
               </IconContext.Provider>
             </div>
             <div className="face4">
-              <IconContext.Provider value={{ color: '#70e0ff' }}>
+              <IconContext.Provider value={{ color: "#70e0ff" }}>
                 <div>
                   <SiReact />
                 </div>
               </IconContext.Provider>
             </div>
             <div className="face5">
-              <IconContext.Provider value={{ color: '#616161' }}>
+              <IconContext.Provider value={{ color: "#616161" }}>
                 <div>
                   <DiUnitySmall />
                 </div>
               </IconContext.Provider>
             </div>
             <div className="face6">
-              <IconContext.Provider value={{ color: '#41c67d' }}>
+              <IconContext.Provider value={{ color: "#41c67d" }}>
                 <div>
                   <SiFigma />
                 </div>

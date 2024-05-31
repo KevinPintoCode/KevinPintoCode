@@ -1,15 +1,18 @@
-import './Portfolio.scss';
-import Loader from 'react-loaders';
-import { useEffect, useState, useRef } from 'react';
-import AnimatedLetters from '../Animated/AnimatedLetters';
-import { getDocs, collection } from 'firebase/firestore/lite';
-import { DB } from '../../firebase';
+import "./Portfolio.scss";
+import Loader from "react-loaders";
+import { useEffect, useState, useRef } from "react";
+import AnimatedLetters from "../Animated/AnimatedLetters";
+import { getDocs, collection } from "firebase/firestore/lite";
+import { DB } from "../../firebase";
 
 export default function Portfolio() {
-  const [letterClass, setLetterClass] = useState('text-animate');
+  const [letterClass, setLetterClass] = useState("text-animate");
   const [portfolio, setPortfolio] = useState([]);
 
-  const projectsArray = 'Some of my projects...'.split('');
+  const projectsArray1 = "Some ".split("");
+  const projectsArray2 = "of ".split("");
+  const projectsArray3 = "my ".split("");
+  const projectsArray4 = "projects...".split("");
 
   useEffect(() => {
     getPortfolio();
@@ -17,12 +20,12 @@ export default function Portfolio() {
 
   useEffect(() => {
     setTimeout(() => {
-      return setLetterClass('text-animate-hover');
+      return setLetterClass("text-animate-hover");
     }, 4000);
   }, []);
 
   const getPortfolio = async () => {
-    const querySnapshot = await getDocs(collection(DB, 'portfolio'));
+    const querySnapshot = await getDocs(collection(DB, "portfolio"));
     setPortfolio(querySnapshot.docs.map((doc) => doc.data()));
   };
 
@@ -58,13 +61,41 @@ export default function Portfolio() {
   return (
     <>
       <div className="container portfolio-page">
-        <h1 className="page-title">
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={projectsArray}
-            idx={15}
-          />
-        </h1>
+        <div className="page-title">
+          <div className="welcome">
+            {" "}
+            <h1>
+              <div className="nowrap">
+                <AnimatedLetters
+                  letterClass={letterClass}
+                  strArray={projectsArray1}
+                  idx={15}
+                />
+              </div>
+              <div className="nowrap">
+                <AnimatedLetters
+                  letterClass={letterClass}
+                  strArray={projectsArray2}
+                  idx={19}
+                />
+              </div>
+              <div className="nowrap">
+                <AnimatedLetters
+                  letterClass={letterClass}
+                  strArray={projectsArray3}
+                  idx={21}
+                />
+              </div>
+              <div className="nowrap">
+                <AnimatedLetters
+                  letterClass={letterClass}
+                  strArray={projectsArray4}
+                  idx={23}
+                />
+              </div>
+            </h1>
+          </div>
+        </div>
         <div>{renderPortfolio(portfolio)}</div>
       </div>
       <Loader type="pacman" />
