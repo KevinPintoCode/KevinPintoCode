@@ -63,7 +63,6 @@ export default function Portfolio() {
       <div className="container portfolio-page">
         <div className="page-title">
           <div className="welcome">
-            {" "}
             <h1>
               <div className="nowrap">
                 <AnimatedLetters

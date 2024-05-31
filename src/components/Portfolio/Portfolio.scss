@@ -1,5 +1,4 @@
-.portfolio-page,
-.contact-page {
+.portfolio-page {
   .page-title {
     display: flex;
     font-family: "Pixelify Sans", cursive;
@@ -122,6 +121,10 @@
 }
 
 @media screen and (max-width: 900px) {
+  .portfolio-page div.page-title {
+    margin-left: 0;
+    margin-top: 0;
+  }
   .container.portfolio-page {
     width: 100%;
     padding: 20px;

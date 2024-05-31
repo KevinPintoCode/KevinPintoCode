@@ -34,18 +34,30 @@ export default function Contact() {
       );
   };
 
-  const strArray = "Contact Me".split("");
+  const strArray1 = "Contact ".split("");
+  const strArray2 = "Me".split("");
   return (
     <>
       <div className="container contact-page">
         <div className="text-zone">
-          <h1>
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={strArray}
-              idx={15}
-            />
-          </h1>
+          <div className="welcome">
+            <h1>
+              <div className="nowrap">
+                <AnimatedLetters
+                  letterClass={letterClass}
+                  strArray={strArray1}
+                  idx={15}
+                />
+              </div>
+              <div className="nowrap">
+                <AnimatedLetters
+                  letterClass={letterClass}
+                  strArray={strArray2}
+                  idx={22}
+                />
+              </div>
+            </h1>
+          </div>
           <p>
             Ready to collaborate on a project or just want to discuss gaming and
             design? Let's chat!
