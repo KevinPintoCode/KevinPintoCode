@@ -1,8 +1,8 @@
-import './index.scss';
+import "./index.scss";
 //Router
-import { Outlet } from 'react-router-dom';
+import { Outlet } from "react-router-dom";
 //Components
-import Sidebar from '../Sidebar/Sidebar.jsx';
+import Sidebar from "../Sidebar/Sidebar.jsx";
 
 export default function Layout() {
   return (
@@ -16,6 +16,7 @@ export default function Layout() {
           <br />
           <span className="bottom-tag-html">&lt;/html&gt;</span>
         </span>
+        <div className="background-image"></div>
       </div>
     </div>
   );
