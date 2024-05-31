@@ -3,6 +3,7 @@ import "./index.scss";
 import { Outlet } from "react-router-dom";
 //Components
 import Sidebar from "../Sidebar/Sidebar.jsx";
+import BackgroundRender from "../Background/Background.jsx";
 
 export default function Layout() {
   return (
@@ -16,12 +17,7 @@ export default function Layout() {
           <br />
           <span className="bottom-tag-html">&lt;/html&gt;</span>
         </span>
-        <div
-          className="background-image"
-          style={{
-            backgroundImage: `url(../src/assets/images/background.png)`,
-          }}
-        ></div>
+        <BackgroundRender />
       </div>
     </div>
   );
