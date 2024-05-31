@@ -28,14 +28,14 @@
 
   .nowrap {
     white-space: nowrap;
+    text-shadow: 0 5px 5px #a970ff;
+    font-weight: 400;
   }
 
   h1 {
     font-size: 53px;
     display: flex;
     flex-wrap: wrap;
-    text-shadow: 0 5px 5px #a970ff;
-    font-weight: 400;
   }
 }
 
