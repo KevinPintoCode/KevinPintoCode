@@ -16,7 +16,12 @@ export default function Layout() {
           <br />
           <span className="bottom-tag-html">&lt;/html&gt;</span>
         </span>
-        <div className="background-image"></div>
+        <div
+          className="background-image"
+          style={{
+            backgroundImage: `url(../src/assets/images/background.png)`,
+          }}
+        ></div>
       </div>
     </div>
   );
